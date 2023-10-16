@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="user.css">
+    <title>Document</title>
+</head>
+
+<body onload="displayImages()">
+    <div class="main">
+
+        <!--  section 1 -->
+        <div class="section1">
+            <div class="title">ROCK <br> PAPER <br> SCISSORS</div>
+            <div class="score">
+                <div class="c-score">
+                    <li>COMPUTER</li>
+                    <li>SCORE</li>
+                    <li class="zero" id="comp-score" ></li>
+                </div>
+
+                <div class="y-score">
+                    <li>YOUR</li>
+                    <li>SCORE</li>
+                    <li class="zero" id="user-score"></li>
+                </div>  
+            </div>
+        </div>
+
+        <div class="close" onclick="closeWindow()">X</div>
+        <!-- game rules section -->
+        <div class="rules">
+            <div class="inner-rules-div">
+                <p>Game Rules</p>
+                <ul type="square">
+                <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</span></li>
+                <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li>
+                <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--  section 2 -->
+        <div class="section2">
+            <div class="first-div">
+                <li>YOU PICKED</li>
+                  <div class="circle"> </div>           
+                <p><img src="" alt="" id="userChoice">  
+                </p> 
+            </div>
+
+            <div class="second-div">
+                <li>YOU WIN</li>
+                <p class="p">AGAINST PC</p>
+                <p><button><a href="index.html">PLAY AGAIN</a></button></p>
+            </div>
+
+            <div class="third-div"> 
+                <li>PC PICKED</li>
+                <!-- <img src="" alt="" id="comChoice"> -->
+                <p><img src="" alt="" id="comChoice"></p>
+            </div>
+        </div>
+
+        
+        <div class="btn-rules">
+            <button onclick="showRules()">RULES</button>
+        </div>
+        <!--  next button -->
+        <div class="section3">
+            <button><a href="hurray.html">NEXT</a></button>
+        </div>
+
+    </div>
+    
+    <script src="user.js"></script>
+    
+</body>
+</html>

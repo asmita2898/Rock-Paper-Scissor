@@ -1,0 +1,78 @@
+body{
+    background: #8CC461;
+    overflow: hidden;
+}
+
+.images2 .stars{
+    height: 10%;
+    margin-left: 30em;
+    position: relative;
+}
+
+.images .hurray{
+    position: absolute;
+    margin-top: 7em;
+    margin-left: 40em;
+}
+
+.titles li{
+    list-style: none;
+}
+
+.title1{
+    font-family: Roboto;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 6em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.title2{
+    color: #FFFFFF;
+    font-family: Roboto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+             
+                     /* ------- buttons -------------- */
+.button .play-again{
+    color: #6B6B6B;
+    font-family: Roboto;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    height: 7vh;
+    width: 10vw;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0.4em;
+    padding: 1em;
+    margin-left: 42em;
+    margin-top: 3em;
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+    color: #6B6B6B;
+}
+
+.button .btn-rules{
+    font-family: Roboto;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    background-color: #8CC461;
+    height: 7vh;
+    width: 7vw;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0.4em;
+    padding: 1em;
+    margin-left: 30em;
+    cursor: pointer;
+}
+

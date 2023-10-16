@@ -1,0 +1,218 @@
+:root{
+    --white: #FFFFFF;
+}
+
+body{
+    background: #8CC461;
+    overflow: hidden;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+
+                         /* -------section 1-------- */
+.section1{
+    border: 2px solid var(--white);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    width: 60%;
+    border-radius: 1.5em;
+    margin: auto;
+}
+
+.title{
+    font-family: Roboto;
+    font-size: 3em;
+    font-weight: 25em;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin: 0.5em 0 0 1em;
+}
+
+.score{
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+}
+
+.score .c-score, .y-score{
+    font-family: Roboto;
+    font-size: 1em;
+    font-weight: 35em;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    border-radius: 0.5em;
+    height: 70% ;
+    width: 30%; 
+    text-align: center; 
+    background-color: var(--white);
+    color: #656565;
+    list-style: none;
+    padding: 1em;
+}
+
+.y-score{
+    margin-left: 3em;
+}
+
+.zero{
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0.2em;
+}
+
+                            /* --------- close button ---------- */
+.close{
+    color: var(--white);
+    font-family: Roboto;
+    background-color: #FF0000;
+    font-weight: bold;
+    height: 6vh;
+    font-size: 2em;
+    text-align: center;
+    width: 3vw;
+    float: right;
+    border-radius: 50%;
+    border: 8px solid var(--white);
+    position: absolute;
+    margin-left: 45em;
+    margin-top: 0.7em;
+    z-index: 7;
+    cursor: pointer;
+    display: none;
+}
+
+                         /* ---------- rules section -------- */
+.rules{
+    background-color: #656565;  
+    width: 100vw; 
+} 
+
+.inner-rules-div{
+    background: linear-gradient(0deg, #004429, #004429),
+    linear-gradient(0deg, var(--white), var(--white));
+    height: 40vh;
+    width: 15vw;
+    padding: 2em;
+    border-radius: 1em;
+    float: right;
+    margin-top: 3em;
+    margin-right: 3em;
+    border: 15px solid var(--white);
+    position: relative;
+    display: none;
+}
+
+.inner-rules-div p{
+    font-family: Roboto;
+    font-size: 2em;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+}
+
+.inner-rules-div ul li span{
+    font-family: Roboto;
+    text-align: left;
+    color: var(--white);
+    font-size: 0.9em;
+}
+
+.inner-rules-div ul li{
+    color: #FFD600;  
+}
+                        
+                           /* --------------- section 2 ---------------- */
+.section2{
+    margin-top: 4em;
+    height: 60%;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 24em;
+}
+
+.row1 img, .row2 img{
+    box-shadow: -1px 1px 11px 0px #00000059;
+    background-color: var(--white);  
+    height: 10vh;
+    width: 4vw;
+    border-radius: 50%;
+    padding: 1.5em;
+    cursor: pointer;
+}
+
+.row1 .rock{
+    border: 16px solid #0074B6;
+}
+
+.row1 .scissor{
+    border: 16px solid #BD00FF;
+    margin-left: 9em;
+}
+
+.row1 .line{
+    background: #000000A3;
+    border: 8px solid #000000A3;
+    width: 9%;
+    position: absolute;
+    border-radius: 0.2em;
+    margin-top: 3.2em;
+    margin-left: 8.5em;
+}
+
+.row2 .paper{
+    border: 16px solid #FFA943;
+    margin-left: 32.5em;
+    margin-top: 4em;
+}
+
+.row2 .line2{
+    background: #000000A3;
+    border: 9px solid #000000A3;
+    width: 6.5%;
+    position: absolute;
+    margin-left: 29em;
+    margin-top:1.2em;
+    transform: rotate(230deg);
+}
+
+.row2 .line3{
+    background: #000000A3;
+    border: 9px solid #000000A3;
+    width: 6.3%;
+    position: absolute;
+    margin-left: 38em;
+    transform: rotate(130deg);
+    margin-top: 1.5em;
+}
+
+.btn-rules button{
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: var(--white);
+    background: #8CC461;
+    border: 2px solid var(--white);
+    border-radius: 0.4em;
+    padding: 0.5em;
+    float: right;
+    margin-right: 5em;
+    cursor: pointer;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <!-- section 1 -->
+        <div class="section1">
+            <div class="title">ROCK <br> PAPER <br> SCISSORS</div>
+            <div class="score">
+                <div class="c-score">
+                    <li>COMPUTER</li>
+                    <li>SCORE</li>
+                    <li class="zero" id="compScore">0</li>
+                </div>
+
+                <div class="y-score">
+                    <li>YOUR</li>
+                    <li>SCORE</li>
+                    <li class="zero" id="userScore">0</li>
+                </div>  
+            </div>
+        </div>
+        
+        <!-- close button -->
+        <div class="close" onclick="closeWindow()">X</div>
+        
+        <!-- game rules section -->
+        <div class="rules">
+            <div class="inner-rules-div">
+                <p>Game Rules</p>
+                <ul type="square">
+                <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</span></li>
+                <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li>
+                <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- section2- icons -->
+        <div class="section2">
+            <div class="row1">
+                <img src="rock.png" alt="" class="rock" onclick="displayChoice('rock')">
+                <hr class="line">
+                <img src="scissor.png" alt="" class="scissor" onclick="displayChoice('scissor')">
+            </div>
+            
+            <div class="row2">
+                <hr class="line2"> <hr class="line3">
+                <img src="paper.png" alt="" class="paper" onclick="displayChoice('paper')">
+            </div>  
+
+            <div class="btn-rules">
+                <button onclick="showRules()">RULES</button>
+            </div>         
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

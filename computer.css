@@ -1,0 +1,264 @@
+:root{
+    --white: #FFFFFF;
+}
+
+body{
+    background: #8CC461;
+    overflow: hidden;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+
+                      /*  ----------------- section 1 -------------------- */
+.section1{
+    border: 2px solid var(--white);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    width: 60%;
+    border-radius: 1.5em;
+    margin: auto;
+}
+
+.title{
+    font-family: Roboto;
+    font-size: 3em;
+    font-weight: 25em;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin: 0.5em 0 0 1em;
+}
+
+.score{
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+}
+
+.score .c-score, .y-score{
+    font-family: Roboto;
+    font-size: 1em;
+    font-weight: 35em;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    border-radius: 0.5em;
+    height: 70% ;
+    width: 30%; 
+    text-align: center; 
+    background-color: var(--white);
+    color: #656565;
+    list-style: none;
+    padding: 1em;
+}
+
+.y-score{
+    margin-left: 3em;
+}
+
+.zero{
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0.2em;
+}
+
+/* ---------- rules section -------- */
+.rules{
+                         
+    background-color: #656565;  
+    width: 100vw; 
+} 
+
+.inner-rules-div{
+    background: linear-gradient(0deg, #004429, #004429),
+    linear-gradient(0deg, var(--white), var(--white));
+    height: 40vh;
+    width: 15vw;
+    padding: 2em;
+    border-radius: 1em;
+    float: right;
+    margin-top: 3em;
+    margin-right: 3em;
+    border: 15px solid var(--white);
+    position: relative;
+    display: none;
+}
+
+.inner-rules-div p{
+    font-family: Roboto;
+    font-size: 2em;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+}
+
+.inner-rules-div ul li span{
+    font-family: Roboto;
+    text-align: left;
+    color: var(--white);
+    font-size: 0.9em;
+}
+
+.inner-rules-div ul li{
+    color: #FFD600;  
+}
+.btn-rules button{
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: var(--white);
+    background: #8CC461;
+    border: 2px solid var(--white);
+    border-radius: 0.4em;
+    padding: 0.5em;
+    float: right;
+    margin-right: 5em;
+    cursor: pointer;
+    margin-top: 1.5em;
+}
+                        
+.close{
+    color: var(--white);
+    font-family: Roboto;
+    background-color: #FF0000;
+    font-weight: bold;
+    height: 6vh;
+    font-size: 2em;
+    text-align: center;
+    width: 3vw;
+    float: right;
+    border-radius: 50%;
+    border: 8px solid var(--white);
+    position: absolute;
+    margin-left: 45em;
+    margin-top: 0.7em;
+    z-index: 7;
+    cursor: pointer;
+    display: none;
+}
+                        
+                         /*  -------------------- section 2 --------------- */
+.section2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7em;
+    justify-content:center ;
+}
+
+.section2 .first-div li, .second-div li, .third-div li{
+    font-family: Roboto;
+    color: var(--white);
+    letter-spacing: 0.1em;
+    list-style: none;
+    font-weight: bold;
+}
+
+.first-div li, .third-div li{
+    font-size: 1.5em;
+}
+
+.second-div li{
+    margin-top: 1em;
+    font-weight: bolder;
+    font-size: 3em;
+    margin-left: 3em;
+}
+
+.third-div li{
+    margin-left: 7em;
+}
+
+.second-div button{
+    color: #6B6B6B;
+    font-family: Roboto;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 18px;
+    height: 8vh;
+    width: 12vw;
+    border-radius: 0.3em;
+    border: 2px solid var(--white);
+    letter-spacing: 0.1em;
+    padding: 0.8em;
+    text-align: center;
+    margin-left: 9em;
+    cursor: pointer;
+}
+
+.second-div a{
+    text-decoration: none;
+    color: #6B6B6B;
+}
+.second-div .p{
+    font-family: Roboto;
+    color: var(--white);
+    letter-spacing: 0.1em;
+    list-style: none;
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: 5em;
+}
+
+.first-div img, .third-div img{
+    background-color: var(--white);
+    height: 12vh;
+    width: 6vw;
+    padding: 1.5em;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.third-div img{
+    margin-left: 10em;
+    border: 20px solid #BD00FF;
+}
+
+.first-div img{
+    border: 20px solid #FFA943;
+}
+
+.circle{
+    height: 27vh;
+    width: 13vw;
+    padding: 0.1em;
+    border-radius: 50%;
+    background-color: #2f9a25e2;
+    opacity: 0.7;
+    position: absolute;
+    margin-left: 9em;
+    animation: scaleIn 3s ease-in-out infinite;
+}
+
+                           /* ---------- animation ---------- */
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+        
+    }
+
+    50%{
+        transform: scale(1.2);
+        opacity: 0.8;
+        
+    }
+
+    100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+   
+}
